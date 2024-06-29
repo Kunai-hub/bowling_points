@@ -56,7 +56,7 @@ class Bowling:
 
         if not game_result:
             logging.critical('Вы не указали результаты вашей игры!!!')
-            raise InputValueError('Вы не указали результаты вашей игры!!!')
+            raise AttributeError('Вы не указали результаты вашей игры!!!')
 
         self.game_result = game_result
         self.total_score = 0
@@ -141,7 +141,7 @@ class Throw(ABC):
         elif '1' <= symbol <= '9':
             return int(symbol)
         else:
-            raise InputValueError(f'Получен неверный символ "{symbol}!!!"')
+            raise InputValueError(f'Получен неверный символ "{symbol}"!!!')
 
     @abstractmethod
     def strike(self):
