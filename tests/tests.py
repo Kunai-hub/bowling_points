@@ -38,3 +38,31 @@ class BowlingTest(TestCase):
             bowling = bowling_engine.Bowling(game_result='2X')
             bowling.results_collection()
 
+    def test_result_collection(self):
+        bowling = bowling_engine.Bowling(game_result='X2/')
+        result = bowling.results_collection()
+        self.assertEqual(result, 35, 'Не верно рассчитываются очки!')
+
+    def test_result_strike(self):
+        bowling = bowling_engine.Bowling(game_result='X')
+        result = bowling.results_collection()
+        self.assertEqual(result, 20, 'Не верно рассчитываются очки за страйк!')
+
+    def test_result_spare(self):
+        bowling = bowling_engine.Bowling(game_result='2/')
+        result = bowling.results_collection()
+        self.assertEqual(result, 15, 'Не верно рассчитываются очки за спайр!')
+
+    def test_result_miss(self):
+        bowling = bowling_engine.Bowling(game_result='--')
+        result = bowling.results_collection()
+        self.assertEqual(result, 0, 'Не верно рассчитываются очки!')
+
+    def test_result_hits(self):
+        bowling = bowling_engine.Bowling(game_result='23')
+        result = bowling.results_collection()
+        self.assertEqual(result, 5, 'Не верно рассчитываются очки!')
+
+
+if __name__ == '__main__':
+    TestCase.main()
