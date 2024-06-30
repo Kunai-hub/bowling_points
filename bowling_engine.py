@@ -129,6 +129,7 @@ class Throw(ABC):
     def process(self, symbol):
         """
         Считывание символов в результате
+
         :param symbol: символ
         :return: количество очков
         """
@@ -147,6 +148,7 @@ class Throw(ABC):
     def strike(self):
         """
         Получение очков для strike
+
         :return: None
         """
         pass
@@ -155,6 +157,7 @@ class Throw(ABC):
     def spare(self):
         """
         Получение очков для spare
+
         :return: None
         """
         pass

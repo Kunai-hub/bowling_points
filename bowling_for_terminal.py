@@ -6,6 +6,7 @@ import bowling_engine
 def terminal_results_collection():
     """
     Консольная программа для подсчета очков игры в боулинг на основе результатов фреймов
+
     :return: None
     """
     parser = argparse.ArgumentParser(
