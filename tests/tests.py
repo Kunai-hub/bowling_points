@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from unittest import TestCase
+import unittest
 import bowling_engine
 
 
-class BowlingTest(TestCase):
+class BowlingTest(unittest.TestCase):
     """
     Тесты для модуля bowling_engine
     """
@@ -109,4 +109,4 @@ class BowlingTest(TestCase):
 
 
 if __name__ == '__main__':
-    TestCase.main()
+    unittest.main()
