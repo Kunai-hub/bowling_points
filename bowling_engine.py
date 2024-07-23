@@ -39,7 +39,7 @@ class SpareError(BowlingError):
 
 class Bowling:
     """
-    Программа для подсчета очков игры в боулинг на основе результатов фреймов
+    Программа для подсчета очков игры в боулинг на основе результатов фреймов.
     """
 
     def __init__(self, game_result, need_log=False):
@@ -65,7 +65,7 @@ class Bowling:
 
     def results_collection(self):
         """
-        Запуск сбора результатов
+        Запуск сбора результатов.
 
         :return: Итоговое количество очков
         """
@@ -124,12 +124,12 @@ class Bowling:
 
 class Throw(ABC):
     """
-    Создание класса броска
+    Создание класса броска.
     """
 
     def process(self, symbol):
         """
-        Считывание символов в результате
+        Считывание символов в результате.
 
         :param symbol: символ
         :return: количество очков
@@ -148,7 +148,7 @@ class Throw(ABC):
     @abstractmethod
     def strike(self):
         """
-        Получение очков для strike
+        Получение очков для strike.
 
         :return: None
         """
@@ -157,7 +157,7 @@ class Throw(ABC):
     @abstractmethod
     def spare(self):
         """
-        Получение очков для spare
+        Получение очков для spare.
 
         :return: None
         """
@@ -166,7 +166,7 @@ class Throw(ABC):
 
 class FirstThrow(Throw):
     """
-    Создание первого броска
+    Создание первого броска.
     """
 
     def strike(self):
@@ -181,7 +181,7 @@ class FirstThrow(Throw):
 
 class SecondThrow(Throw):
     """
-    Создание второго броска
+    Создание второго броска.
     """
 
     def strike(self):

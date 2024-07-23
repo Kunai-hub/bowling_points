@@ -6,12 +6,12 @@ import bowling_engine
 
 class BowlingTest(unittest.TestCase):
     """
-    Тесты для модуля bowling_engine
+    Тесты для модуля bowling_engine.
     """
 
     def test_attribute_error_1(self):
         """
-        Тест на выброс исключения входных данных
+        Тест на выброс исключения входных данных.
 
         :return: None
         """
@@ -21,7 +21,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_attribute_error_2(self):
         """
-        Тест на выброс исключения входных данных
+        Тест на выброс исключения входных данных.
 
         :return: None
         """
@@ -31,7 +31,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_max_frame_error(self):
         """
-        Тест на выброс исключения максимального количества фреймов
+        Тест на выброс исключения максимального количества фреймов.
 
         :return: None
         """
@@ -41,7 +41,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_symbols_error(self):
         """
-        Тест на выброс исключения неизвестного символа
+        Тест на выброс исключения неизвестного символа.
 
         :return: None
         """
@@ -51,7 +51,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_spare_error(self):
         """
-        Тест на выброс исключения спайра
+        Тест на выброс исключения спайра.
 
         :return: None
         """
@@ -61,7 +61,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_strike_error(self):
         """
-        Тест на выброс исключения страйка
+        Тест на выброс исключения страйка.
 
         :return: None
         """
@@ -71,7 +71,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_result_collection(self):
         """
-        Тест на правильный расчет
+        Тест на правильный расчет.
 
         :return: None
         """
@@ -81,7 +81,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_result_strike(self):
         """
-        Тест на страйк
+        Тест на страйк.
 
         :return: None
         """
@@ -91,7 +91,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_result_spare(self):
         """
-        Тест на спайр
+        Тест на спайр.
 
         :return: None
         """
@@ -101,7 +101,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_result_miss(self):
         """
-        Тест на два промаха
+        Тест на два промаха.
 
         :return: None
         """
@@ -111,7 +111,7 @@ class BowlingTest(unittest.TestCase):
 
     def test_result_hits(self):
         """
-        Тест на два попадания
+        Тест на два попадания.
 
         :return: None
         """
